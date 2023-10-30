@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de texto</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <main id="container">
+            <header id="section-logo">
+                <!-- logo alura 10% -->
+                <img src="static/Vector.png" alt="Logo da Alura">
+            </header>
+            <section id="section-input">
+                <textarea name="message" id="input-message" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+                <div id="action-section">
+                    <p id="info-text">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                    <div id="btn-section">
+                        <button onclick="encrypt()" class="btn btn-solid">Criptografar</button>
+                        <button onclick="decrypt()" class="btn btn-outline">Descriptografar</button>
+                    </div>
+                </div>  
+            </section>
+            <section id="section-output">
+                <div id="no-output">
+                    <img id="img-no-output" src="static/High quality products 1 1.svg" alt="Imagem utilizada para ilustrar que não possui nenhuma mensagem">
+                    <h3 id="title-no-output">Nenhuma mensagem encontrada</h3>
+                    <p id="text-no-output">Digite um texto que você deseja criptografar ou descriptografar</p>
+                    <!-- aparece quando não tem nenhuma mensagem --> 
+                </div>
+                <div id="output-message">
+                    <!-- aparece quando tem alguma mensagem -->
+                    <p id="resulting-message"></p>
+                    <button onclick="copy()" class="btn-copy btn-outline">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4 class="text-footer">
+                Feito por João Arthur Britto
+                <span class="icons-footer">
+                    <a class="link-footer" href="https://www.linkedin.com/in/joao-arthur-britto/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a class="link-footer" href="https://github.com/j0aoarthur"><i class="fa-brands fa-github fa-xl"></i></a>
+                </span>
+            </h4>
+        </footer>
+        <script src="https://kit.fontawesome.com/d6220a3e4a.js" crossorigin="anonymous"></script>
+    </body>
+</html>

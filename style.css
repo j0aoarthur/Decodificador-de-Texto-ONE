@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family:  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    height: 100vh;
+    background-color: #FCF3F3;
+    padding: 3%;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    height: 98%;
+    gap: 30px;
+}
+
+#section-logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+#section-input {
+    padding: 100px 0 30px 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#input-message {
+    border: none;
+    background-color: transparent;
+    color: #CA2424;
+    font-size: 32px;
+    width: 100%;
+    resize: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+#input-message:focus {
+    outline: none;
+    /* isso é para não mostrar aquela bordinha quando ativado o focus */
+}
+::placeholder {
+    color: #ca24247b;
+}
+
+
+#info-text {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#btn-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 48%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    transition: color 0.5s, background-color 0.5s;
+    border: 1px #CA2424 solid;
+    
+}
+
+.btn-solid, .btn-outline:hover {
+    background-color: #CA2424;
+    color: #FCF3F3;
+
+}
+
+.btn-outline, .btn-solid:hover {
+    color: #CA2424;
+    background-color: transparent;
+}
+
+#section-output {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+#no-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#title-no-output {
+    font-size: 1.3rem;
+    color: rgb(36, 36, 36);
+    font-weight: 700;
+}
+
+#text-no-output {
+    font-size: 1rem;
+    margin: 10px 40px;
+    color: rgb(36, 36, 36);
+}
+
+#output-message {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    word-wrap: break-word
+}
+
+#resulting-message {
+    line-height: 150%;
+    font-size: 1.4rem;
+    color: #454545;
+}
+
+.btn-copy {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    transition: color 0.5s, background-color 0.5s;
+    border: 1px #CA2424 solid;
+}
+
+.link-footer {
+    color: #CA2424;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.text-footer {
+    color: #CA2424;
+}
