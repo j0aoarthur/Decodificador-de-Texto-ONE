@@ -10,7 +10,6 @@
     <body>
         <main id="container">
             <header id="section-logo">
-                <!-- logo alura 10% -->
                 <img onclick="window.location.reload();" src="static/alura_logo.png" alt="Logo da Alura">
             </header>
             <section id="section-input">
@@ -32,16 +31,14 @@
                     <img id="img-no-output" src="static/not_found_vector.svg" alt="Imagem utilizada para ilustrar que não possui nenhuma mensagem">
                     <h3 id="title-no-output">Nenhuma mensagem encontrada</h3>
                     <p id="text-no-output">Digite um texto que você deseja criptografar ou descriptografar</p>
-                    <!-- aparece quando não tem nenhuma mensagem --> 
                 </div>
                 <div id="output-message">
-                    <!-- aparece quando tem alguma mensagem -->
                     <p id="resulting-message"></p>
                     <button onclick="copy()" class="btn-copy btn-outline">Copiar</button>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="footer-info">
             <h4 class="text-footer">
                 Feito por João Arthur Britto
                 <span class="icons-footer">

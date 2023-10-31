@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* font-family:  */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +12,10 @@ body {
     height: 100vh;
     background-color: #FCF3F3;
     padding: 3%;
+    min-width: 375px;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -23,14 +25,13 @@ footer {
 
 #container {
     display: flex;
-    height: 98%;
+    height: 100%;
     gap: 30px;
 }
 
 #section-logo {
     width: 10%;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     padding: 10px;
 }
@@ -146,6 +147,11 @@ footer {
     font-size: 16px;
     transition: color 0.5s, background-color 0.5s;
     border: 1px #CA2424 solid;
+    margin-top: 30px;
+}
+
+#ooter-info {
+    margin: 20px 0;
 }
 
 .link-footer {
@@ -156,4 +162,46 @@ footer {
 
 .text-footer {
     color: #CA2424;
+}
+
+/* Medium devices (landscape tablets, 1090 and down) */
+@media only screen and (max-width: 1090px) {
+
+    body {
+        min-height: 990px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #section-logo , #section-input , #section-output {
+        width: 100%; 
+    }
+
+    #img-no-output {
+        display: none;
+    }
+
+    #section-output {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body {
+        min-height: 1100px;
+    }
+
+    #btn-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
