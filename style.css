@@ -19,7 +19,7 @@ body {
 }
 
 footer {
-    margin-top: 10px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -102,6 +102,8 @@ footer {
     background-color: white;
     border-radius: 25px;
     padding: 30px;
+    -webkit-box-shadow: 8px 10px 29px -2px rgba(0,0,0,0.44); 
+    box-shadow: 8px 10px 29px -2px rgba(0,0,0,0.44);
 }
 
 #no-output {
@@ -150,10 +152,6 @@ footer {
     margin-top: 30px;
 }
 
-#ooter-info {
-    margin: 20px 0;
-}
-
 .link-footer {
     color: #CA2424;
     text-decoration: none;
@@ -168,7 +166,7 @@ footer {
 @media only screen and (max-width: 1090px) {
 
     body {
-        min-height: 990px;
+        min-height: 1010px;
     }
 
     #container {
@@ -192,7 +190,7 @@ footer {
 @media only screen and (max-width: 600px) {
 
     body {
-        min-height: 1100px;
+        min-height: 1140px;
     }
 
     #btn-section {
