@@ -44,38 +44,32 @@ function verifyText(text) {
     }
 }
 
+
 function encrypt() {
     var elementMessage = document.getElementById("input-message");
     var message = elementMessage.value;
-
+    
     erro = verifyText(message);
     if (erro) {
         errorText(erro);
         return;
     }
-
+    
     var output_message = "";
+    
+    var replacements = {
+        "e": "enter",
+        "i": "imes",
+        "a": "ai",
+        "o": "ober",
+        "u": "ufat"
+    };
 
+    for (var i = 0; i < message.length; i++) {
+        var current_char = message[i];
+        var replacement_string = replacements[current_char];
 
-    for (var i = 0; i < message.length; i++ ) {
-        if (message[i] == "e") {
-            output_message += "enter";
-        }
-        else if (message[i] == "i") {
-            output_message += "imes";
-        }
-        else if (message[i] == "a") {
-            output_message += "ai";
-        }
-        else if (message[i] == "o") {
-            output_message += "ober";
-        }
-        else if (message[i] == "u") {
-            output_message += "ufat";
-        }
-        else {
-            output_message += message[i];
-        }
+        output_message += replacement_string || current_char;
     }
     
     addText(output_message);
