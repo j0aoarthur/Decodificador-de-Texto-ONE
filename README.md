@@ -42,5 +42,9 @@ O Decodificador de Texto é uma aplicação divertida que demonstra como as pala
 
 Apesar de ser uma aplicação bem simples. Esse projeto foi essencial para a prática dos conhecimentos aprendidos durante o curso, como CSS, JavaScript, HTMl e principalmente Flexbox, um modelo de layout de CSS tão essencial para a construção de um site moderno.
 
+## Badge recebida pela conclusão do projeto
+
+![image](https://github.com/j0aoarthur/Decodificador-de-Texto-ONE/assets/121466923/467ec933-195d-47ad-8e9c-c2ab86df2055)
+
 
 
